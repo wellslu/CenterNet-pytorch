@@ -1,0 +1,27 @@
+trainer:
+  name: Trainer
+  num_epochs: 10
+
+dataset:
+  name: VOCDataLoader
+  batch_size: 16
+  scale: 512
+  num_classes: 1
+
+model:
+  name: CenterNet_MobileNet
+  num_classes: 1
+
+focal_loss:
+  name: FocalLoss
+
+reg_l1:
+  name: RegL1
+
+optimizer:
+  name: Adam
+  lr: 1.e-3
+
+scheduler:
+  name: StepLR
+  step_size: 10
